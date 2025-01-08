@@ -56,13 +56,16 @@ border-bottom: 1px solid #008caf5f;
     display: inline-block;
     margin-right:20px;
 }
+.dropdown-content.case{
+    left: -400px;
+}
 
 .dropdown-btn{
     background-color:white;
     border: none;
     color: Black;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 700;
 }
 .dropdown-content {
@@ -136,6 +139,9 @@ border-bottom: 1px solid #008caf5f;
 }
 .dropdown:hover .dropdown-content{
     display: block;
+}
+.hamburger-icon{
+    display:none;
 }
 .navbar-nav{
     margin-left: 90px;
@@ -523,4 +529,50 @@ scale: 1.2;
  .card-body a{
     text-decoration: none;
     color: inherit;
+ }
+ @media(max-width:1140px)
+ {
+
+    .navbar-brand img {
+        width: 250px;
+        height: 70px;
+    }
+    .dropdown{
+        margin-right: 10px;
+    }
+    .dropdown-btn{
+        padding: 5px;
+    }
+    .container.container-nav {
+        justify-content: center;
+        gap: 15px;
+    }
+    .dropdown-content.storage{
+        left: -320px;
+    }
+    .dropdown-content.case{
+        left: -420px;
+    }
+ }
+ @media(max-width:780px)
+ {
+    .navbar-brand img {
+        width: 200px;
+        height: 60px;
+    }
+    .container.container-nav div{
+        display: none;
+    }
+    .container.container-nav {
+        justify-content: normal;
+        gap:20px;
+    }
+    .hamburger-icon {
+display: block;
+    }
+    .hamburger-icon i{
+            color: #0F6480;
+            margin-left: 20px;
+            font-size: 1.5rem;      
+    }
  }

@@ -205,6 +205,45 @@ border-bottom: 1px solid #008caf5f;
     font-size: 1rem;
     line-height: 1.5;
   }
+  .container-card {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+ 
+}
+.card-content{
+    padding: 20px 30px;
+}
+
+.view-more {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+
+.view-more span {
+    margin-left: 5px;
+    transition: margin-left 0.3s;
+}
+
+.view-more:hover span {
+    margin-left: 10px;
+}
+
   footer {
     background-color: #333333; /* Dark background */
     color: #cccccc; /* Light text color */
